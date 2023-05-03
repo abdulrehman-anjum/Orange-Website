@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Noto+Serif+Georgian:wght@200&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  padding-top: 50px;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  color: #FFE6C7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #454545;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF6000;
+  overflow: hidden;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul .nav-items {
+  display: block;
+  color: #FFE6C7;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+nav ul .nav-items:hover {
+  background-color: #FFA559;
+}
+
+table {
+  font-family: "Noto Serif Georgian", serif;
+  border-collapse: collapse;
+  border: 1px solid #FFE6C7;
+}
+table th, table td {
+  border: 1px solid #FFE6C7;
+  padding: 10px;
+}
+table th button, table td button {
+  width: 100%;
+  background-color: #FF6000;
+  color: #FFE6C7;
+  font-size: 16px;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form {
+  font-family: "Roboto", sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #FFE6C7;
+  border-radius: 3px;
+  padding: 10px;
+}
+form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+form input {
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px 0 15px;
+  width: 100%;
+  font-size: 16px;
+}
+form input[type=submit] {
+  background-color: #FF6000;
+  color: #FFE6C7;
+  font-size: 16px;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: orangeish;
+}
+.card .child-card {
+  margin: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-page-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border: 2px solid #FFE6C7;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #FFE6C7;
+  padding: 0 10px;
+}
+
+h1 {
+  font-family: "Noto Serif Georgian", serif;
+  color: #FF6000;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+a {
+  color: #FFE6C7;
+  text-decoration: none;
+}
+
+p {
+  color: #FFE6C7;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+	{%block title%} All Employees {%endblock%}
+
+	{%block body%}
+
+		<div class="card">
+			<h1 class='child-card'>Employee List</h1>
+			<table class="child-card" border="1" cellspacing="10px">
+				<thead>
+					
+					<th>Id</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phone#</th>
+					<th>Department</th>
+				</thead>
+				<tbody>
+					{% for employee in employees %}
+					<tr>
+						<td>{{ employee.id }}</td>
+						<td>{{ employee.name }}</td>
+						<td>{{ employee.email }}</td>
+						<td>{{ employee.phone_number }}</td>
+						<td>{{ employee.department }}</td>
+						<td><a href="employee/{{ employee.id }}/update"><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
+						<td><a href="employee/{{ employee.id }}/delete"><i class="fa-solid fa-trash"></i> Delete</a></td>
+					</tr>
+			{% endfor %}
+				<tr><td colspan=7 ><a href="/register"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a></td></tr>
+				</tbody>
+			</table>
+			
+		</div>
+
+	{%endblock%} 

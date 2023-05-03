@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}Rehman{% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<script src="https://kit.fontawesome.com/1c1950207a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+	  <ul>
+	    <li><a class="nav-items" href="/"><span class="fas fa-home"></span><br> Home</a></li>
+	    <li><a class="nav-items" href="/register"><span class="fas fa-user-plus"></span><br> Register</a></li>
+	    <li><a class="nav-items" href="/show_employees"><span class="fas fa-users"></span><br> Users</a></li>
+	  </ul>
+	</nav>
+
+
+	{% block body %}
+	{% endblock %}
+</body>
+</html>

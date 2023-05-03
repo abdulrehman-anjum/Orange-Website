@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title%} Register
+{% endblock%}
+ 
+{% block body %}
+<div class="card">
+	<form class="child-card" action="/register" method="POST">
+		{% csrf_token %}
+		<label for="name">Employee Name</label><br>
+		<input type="text" name="name"><br>
+		<label for="email">Employee Email</label><br>
+		<input type="email" name="email"><br>
+		<label for="phone_number">Phone#</label><br>
+		<input type="text" name="phone_number"><br>
+		<label for="department">Department</label><br>
+		<input type="text" name="department"><br>
+
+		<input type="submit" value="Register">
+	</form>
+</div>
+
+{% endblock %}
